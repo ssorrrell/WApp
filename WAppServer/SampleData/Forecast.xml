@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<dwml version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd">
+  <head>
+    <product concise-name="dwmlByDay" operational-mode="developmental" srsName="WGS 1984">
+      <creation-date refresh-frequency="PT1H">2020-07-23T21:36:17-05:00</creation-date>
+     <category>current observations and forecast</category>
+    </product>
+    <source>
+      <production-center>Amarillo, TX</production-center>
+      <credit>https://www.weather.gov/ama</credit>
+      <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+    </source>
+  </head>
+  <data type="forecast">
+
+  <location>
+    <location-key>point1</location-key>
+    <point latitude="35.24" longitude="-101.82"/>
+    <area-description>3 Miles N Amarillo TX</area-description>
+    <height datum="mean sea level" height-units="feet">3596</height>
+  </location>
+<moreWeatherInformation applicable-location="point1">http://forecast.weather.gov/MapClick.php?lat=35.24&amp;lon=-101.82</moreWeatherInformation>
+  <time-layout time-coordinate="local" summarization="12hourly">
+    <layout-key>k-p12h-n14-1</layout-key>
+      <start-valid-time period-name="Tonight">2020-07-23T22:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Friday">2020-07-24T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Friday Night">2020-07-24T18:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Saturday">2020-07-25T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Saturday Night">2020-07-25T18:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Sunday">2020-07-26T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Sunday Night">2020-07-26T18:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Monday">2020-07-27T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Monday Night">2020-07-27T18:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Tuesday">2020-07-28T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Tuesday Night">2020-07-28T18:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Wednesday">2020-07-29T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Wednesday Night">2020-07-29T18:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Thursday">2020-07-30T06:00:00-05:00</start-valid-time>
+  </time-layout>
+
+  <time-layout time-coordinate="local" summarization="12hourly">
+    <layout-key>k-p24h-n7-1</layout-key>
+      <start-valid-time period-name="Tonight">2020-07-23T22:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Friday Night">2020-07-24T18:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Saturday Night">2020-07-25T18:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Sunday Night">2020-07-26T18:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Monday Night">2020-07-27T18:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Tuesday Night">2020-07-28T18:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Wednesday Night">2020-07-29T18:00:00-05:00</start-valid-time>
+  </time-layout>
+
+  <time-layout time-coordinate="local" summarization="12hourly">
+    <layout-key>k-p24h-n7-2</layout-key>
+      <start-valid-time period-name="Friday">2020-07-24T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Saturday">2020-07-25T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Sunday">2020-07-26T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Monday">2020-07-27T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Tuesday">2020-07-28T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Wednesday">2020-07-29T06:00:00-05:00</start-valid-time>
+      <start-valid-time period-name="Thursday">2020-07-30T06:00:00-05:00</start-valid-time>
+  </time-layout>
+
+
+  <parameters applicable-location="point1">
+
+    <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+      <name>Daily Minimum Temperature</name>
+        <value>69</value>
+        <value>68</value>
+        <value>68</value>
+        <value>68</value>
+        <value>66</value>
+        <value>66</value>
+        <value>66</value>
+    </temperature>
+
+    <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-2">
+      <name>Daily Maximum Temperature</name>
+        <value>92</value>
+        <value>92</value>
+        <value>93</value>
+        <value>89</value>
+        <value>87</value>
+        <value>91</value>
+        <value>93</value>
+    </temperature>
+
+    <probability-of-precipitation type="12 hour" units="percent" time-layout="k-p12h-n14-1">
+      <name>12 Hourly Probability of Precipitation</name>
+        <value xsi:nil="true"/>
+        <value>20</value>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value xsi:nil="true"/>
+        <value>40</value>
+        <value>40</value>
+        <value>30</value>
+        <value>30</value>
+        <value>20</value>
+        <value>20</value>
+        <value xsi:nil="true"/>
+    </probability-of-precipitation>
+
+    <weather time-layout="k-p12h-n14-1">
+      <name>Weather Type, Coverage, Intensity</name>
+        <weather-conditions weather-summary="Partly Cloudy"/>
+        <weather-conditions weather-summary="Mostly Sunny then Isolated T-storms"/>
+        <weather-conditions weather-summary="Mostly Clear"/>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Mostly Clear"/>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Partly Cloudy"/>
+        <weather-conditions weather-summary="Chance T-storms"/>
+        <weather-conditions weather-summary="Chance T-storms"/>
+        <weather-conditions weather-summary="Chance T-storms"/>
+        <weather-conditions weather-summary="Chance T-storms"/>
+        <weather-conditions weather-summary="Slight Chance T-storms"/>
+        <weather-conditions weather-summary="Slight Chance T-storms"/>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+    </weather>
+
+    <conditions-icon type="forecast-NWS" time-layout="k-p12h-n14-1">
+      <name>Conditions Icon</name>        <icon-link>http://forecast.weather.gov/newimages/medium/nsct.png</icon-link>
+        <icon-link>http://forecast.weather.gov/DualImage.php?i=sct&amp;j=hi_tsra&amp;jp=20</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/nfew.png</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/sct.png</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/nfew.png</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/sct.png</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/nsct.png</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/scttsra40.png</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/nscttsra40.png</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/scttsra30.png</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/nscttsra30.png</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/hi_tsra20.png</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/hi_ntsra20.png</icon-link>
+        <icon-link>http://forecast.weather.gov/newimages/medium/sct.png</icon-link>
+    </conditions-icon>
+
+    <hazards time-layout="">
+      <name>Watches, Warnings, and Advisories</name>
+      <hazard-conditions>
+        <hazard headline="Hazardous Weather Outlook">
+          <hazardTextURL>http://forecast.weather.gov/showsigwx.php?warnzone=TXZ012&amp;warncounty=TXC375&amp;firewxzone=TXZ012&amp;local_place1=3+Miles+N+Amarillo+TX&amp;product1=Hazardous+Weather+Outlook</hazardTextURL>
+        </hazard>
+      </hazard-conditions>
+    </hazards>
+
+    <wordedForecast time-layout="k-p12h-n14-1" dataSource="amaNetcdf" wordGenerator="markMitchell">
+      <name>Text Forecast</name>
+        <text>Partly cloudy, with a low around 69. South southeast wind around 10 mph, with gusts as high as 20 mph. </text>
+        <text>Isolated showers and thunderstorms after 2pm.  Mostly sunny, with a high near 92. South southeast wind 10 to 15 mph.  Chance of precipitation is 20%.</text>
+        <text>Mostly clear, with a low around 68. South southeast wind around 15 mph, with gusts as high as 20 mph. </text>
+        <text>Mostly sunny, with a high near 92. South wind 10 to 15 mph. </text>
+        <text>Mostly clear, with a low around 68. South southeast wind 10 to 15 mph. </text>
+        <text>Mostly sunny, with a high near 93. South southeast wind around 10 mph. </text>
+        <text>Partly cloudy, with a low around 68. South southeast wind 10 to 15 mph. </text>
+        <text>A 40 percent chance of showers and thunderstorms.  Partly sunny, with a high near 89. Southwest wind around 5 mph becoming east northeast in the afternoon. </text>
+        <text>A 40 percent chance of showers and thunderstorms.  Mostly cloudy, with a low around 66. East southeast wind 5 to 10 mph. </text>
+        <text>A 30 percent chance of showers and thunderstorms.  Partly sunny, with a high near 87.</text>
+        <text>A 30 percent chance of showers and thunderstorms.  Mostly cloudy, with a low around 66.</text>
+        <text>A 20 percent chance of showers and thunderstorms.  Mostly sunny, with a high near 91.</text>
+        <text>A 20 percent chance of showers and thunderstorms.  Partly cloudy, with a low around 66.</text>
+        <text>Mostly sunny, with a high near 93.</text>
+    </wordedForecast>
+
+</parameters>
+</data>
+<data type="current observations">
+	<location>
+		<location-key>point1</location-key>
+		<point latitude="35.22" longitude="-101.72"/>
+		<area-description>Amarillo, Amarillo International Airport, TX</area-description>
+		<height datum="mean sea level" height-units="feet">3606</height>
+	</location>
+	<moreWeatherInformation applicable-location="point1">http://www.nws.noaa.gov/data/obhistory/KAMA.html</moreWeatherInformation>	<time-layout time-coordinate="local">	<layout-key>k-p1h-n1-1</layout-key>	<start-valid-time period-name="current">2020-07-23T21:53:00-05:00</start-valid-time>	</time-layout>	<parameters applicable-location="point1">	<temperature type="apparent" units="Fahrenheit" time-layout="k-p1h-n1-1">	<value>78</value>	</temperature>	<temperature type="dew point" units="Fahrenheit" time-layout="k-p1h-n1-1">	<value>65</value>	</temperature>	<humidity type="relative" time-layout="k-p1h-n1-1">	<value>64</value>	</humidity>	<weather time-layout="k-p1h-n1-1">	<name>Weather Type, Coverage, Intensity</name>	<weather-conditions weather-summary="Fair"/>	<weather-conditions>	<value>	<visibility units="statute miles">10.00</visibility>	</value>	</weather-conditions>	</weather>	<conditions-icon type="forecast-NWS" time-layout="k-p1h-n1-1">	<name>Conditions Icon</name>	<icon-link>http://forecast.weather.gov/newimages/medium/nsct.png</icon-link>	</conditions-icon>	<direction type="wind" units="degrees true" time-layout="k-p1h-n1-1">	<value>150</value>	</direction>	<wind-speed type="gust" units="knots" time-layout="k-p1h-n1-1">	<value>NA</value>	</wind-speed>	<wind-speed type="sustained" units="knots" time-layout="k-p1h-n1-1">	<value>9</value>	</wind-speed>		<pressure type="barometer" units="inches of mercury" time-layout="k-p1h-n1-1">			<value>30.06</value>		</pressure>	</parameters></data></dwml>

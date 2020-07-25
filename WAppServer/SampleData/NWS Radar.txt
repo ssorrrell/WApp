@@ -1,0 +1,122 @@
+https://www.weather.gov/jetstream/ridge_download
+https://radar.weather.gov/ridge/RadarImg/N0R/AMA/
+https://radar.weather.gov/ridge/RadarImg/N0R/AMA_N0R_0.gif
+https://w1.weather.gov/xml/current_obs/KAMA.xml
+https://alerts.weather.gov/cap/us.php?x=0
+
+List of forecast stations
+https://en.wikipedia.org/wiki/List_of_National_Weather_Service_Weather_Forecast_Offices
+
+List of observation sites
+https://w1.weather.gov/xml/current_obs/seek.php?state=tx&Find=Find
+
+List of Radar Sites
+https://www.roc.noaa.gov/WSR88D/Program/NetworkSites.aspx
+https://www.roc.noaa.gov/WSR88D/Maps.aspx
+
+At present, there are three ways to obtain images from the RIDGE radar.
+
+    Grunt method. Use the overlay toggles and "right click" on each layer to save it to the local computer. Remember, this only saves the right-most image as indicated by the toggle bar.
+    Screen Capture. Use the toggle overlays to configure the image then use a screen capture utility to save the image to the local computer. This saves the steps needed to stack the images onto of each other in a graphics program and is also how all the RIDGE images used in this section were obtained.
+    Download the individual files. All RIDGE radar images are downloadable and all that is needed is the URL. The table (below) provides the paths to each image. For the radar image, legend, or warnings images, the most recent graphic available ends in "_0.gif". For example, the most recent radar image for the Fort Worth Doppler radar is...
+    http://radar.weather.gov/ridge/RadarImg/N0R/FWS_N0R_0.gif
+    To view and retrieve the 20 most recent radar images then the URL is...
+    http://radar.weather.gov/ridge/RadarImg/N0R/FWS/
+    The filename format for these recent images is: xxx_YYYYMMDD_hhmm_N??.gif, where
+    xxx - Radar site ID
+    YYYY - year
+    MM - month
+    DD - day
+    hh - hour
+    mm - minutes
+    N?? - image ID (N0R, N0S, etc.)
+
+    Topography
+        https://radar.weather.gov/ridge/Overlays/Topo/Short/xxx_Topo_Short.jpg
+        https://radar.weather.gov/ridge/Overlays/Topo/Long/xxx_Topo_Long.jpg
+
+    County boundaries
+        https://radar.weather.gov/ridge/Overlays/County/Short/xxx_County_Short.gif
+        https://radar.weather.gov/ridge/Overlays/County/Long/xxx_County_Long.gif
+
+    Rivers
+        https://radar.weather.gov/ridge/Overlays/Rivers/Short/xxx_Rivers_Short.gif
+        https://radar.weather.gov/ridge/Overlays/Rivers/Long/xxx_Rivers_Long.gif
+
+    Highways
+        https://radar.weather.gov/ridge/Overlays/Highways/Short/xxx_Highways_Short.gif
+        https://radar.weather.gov/ridge/Overlays/Highways/Long/xxx_Highways_Long.gif
+
+    Cities
+        https://radar.weather.gov/ridge/Overlays/Cities/Short/xxx_City_Short.gif
+        https://radar.weather.gov/ridge/Overlays/Cities/Long/xxx_City_Long.gif
+
+
+    Base Reflectivity (out to 124 nm)
+        https://radar.weather.gov/ridge/RadarImg/N0R/xxx (directory for past images)
+        https://radar.weather.gov/ridge/RadarImg/N0R/xxx_NCR_0.gif (for current image)
+
+    Storm Relative Motion
+        https://radar.weather.gov/ridge/RadarImg/N0S/xxx (directory for past images)
+        https://radar.weather.gov/ridge/RadarImg/N0S/xxx_NCR_0.gif (for current image)
+
+    One-Hour Precipitation
+        https://radar.weather.gov/ridge/RadarImg/N1P/xxx (directory for past images)
+        https://radar.weather.gov/ridge/RadarImg/N1P/xxx_NCR_0.gif (for current image)
+
+    Composite Reflectivity
+        https://radar.weather.gov/ridge/RadarImg/NCR/xxx (directory for past images)
+        https://radar.weather.gov/ridge/RadarImg/NCR/xxx_NCR_0.gif (for current image)
+
+    Storm Total Precipitation
+        https://radar.weather.gov/ridge/RadarImg/NTP/xxx (directory for past images)
+        https://radar.weather.gov/ridge/RadarImg/NTP/xxx_NTP_0.gif (for current image)
+
+    Base Reflectivity (out to 248 nmi)
+        https://radar.weather.gov/ridge/RadarImg/N0Z/xxx (directory for past images)
+        https://radar.weather.gov/ridge/RadarImg/N0Z/xxx_NCR_0.gif (for current image)
+
+Warnings Overlay
+
+The paths to the NWS severe weather warnings overlays are...
+
+    Short range
+        https://radar.weather.gov/ridge/Warnings/Short/xxx (directory for past images)
+        https://radar.weather.gov/ridge/Warnings/Short/xxx_Warnings_0.gif (for current image)
+
+    Long range
+        https://radar.weather.gov/ridge/Warnings/Long/xxx (directory for past images)
+        https://radar.weather.gov/ridge/Warnings/Long/xxx_Warnings_0.gif (for current image)
+
+Legend Overlays
+
+The paths to the RIDGE legend overlays are...
+
+    Base Reflectivity (out to 124 nm)
+        https://radar.weather.gov/ridge/Legend/N0R/xxx (directory for past images)
+        https://radar.weather.gov/ridge/Legend/N0R/xxx_N0R_Legend_0.gif (for current image)
+
+    Composite Reflectivity
+        https://radar.weather.gov/ridge/Legend/NCR/xxx (directory for past images)
+        https://radar.weather.gov/ridge/Legend/NCR/xxx_NCR_Legend_0.gif (for current image)
+
+    Storm Relative Motion
+        https://radar.weather.gov/ridge/Legend/N0S/xxx (directory for past images)
+        https://radar.weather.gov/ridge/Legend/N0S/xxx_N0S_Legend_0.gif (for current image)
+
+    Base Velocity
+        https://radar.weather.gov/ridge/Legend/N0V/xxx (directory for past images)
+        https://radar.weather.gov/ridge/Legend/N0V/xxx_N0V_Legend_0.gif (for current image)
+
+    One-Hour Precipitation
+        https://radar.weather.gov/ridge/Legend/N1P/xxx (directory for past images)
+        https://radar.weather.gov/ridge/Legend/N1P/xxx_N1P_Legend_0.gif (for current image)
+
+    Storm Total Precipitation
+        https://radar.weather.gov/ridge/Legend/NTP/xxx (directory for past images)
+        https://radar.weather.gov/ridge/Legend/NTP/xxx_NTP_Legend_0.gif (for current image)
+
+    Base Reflectivity (out to 248 nm)
+        https://radar.weather.gov/ridge/Legend/N0Z/xxx (directory for past images)
+        https://radar.weather.gov/ridge/Legend/N0Z/xxx_N0Z_Legend_0.gif (for current image)
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version='2.0' xmlns:dc='http://purl.org/dc/elements/1.1/'> 
+     <channel>
+<title>Weather at Amarillo, Amarillo International Airport, TX - via NOAA's National Weather Service</title>
+<link>http://www.weather.gov/xml/current_obs/</link>
+     <lastBuildDate>Thu, 23 Jul 2020 20:53:00 -0500</lastBuildDate>
+     <ttl>60</ttl>
+     <description>Weather conditions from NOAA's National Weather Service. </description>
+     <language>en-us</language>
+     <managingEditor>sdb.support@noaa.gov</managingEditor>
+     <webMaster>w-nws.webmaster@noaa.gov</webMaster>
+     <image>
+     <url>http://www.weather.gov/images/xml_logo.gif</url>
+     <title>NOAA - National Weather Service</title>
+     <link>http://www.weather.gov/xml/current_obs/</link>
+     </image> 
+    
+     <item>
+<title>
+Partly Cloudy and 80 F at Amarillo, Amarillo International Airport, TX</title>
+<link>http://w1.weather.gov/data/obhistory/KAMA.html</link> 
+<description>
+<![CDATA[<img src="http://forecast.weather.gov/images/wtf/small/nsct.png" class="noaaWeatherIcon"  width="55" height="58" alt="Partly Cloudy" style="float:left;" /><br />]]>
+Winds are from the Southeast at 19.6 gusting to 25.3 MPH (17 gusting to 22 KT). The pressure is 1012.0 mb and the humidity is 58%.
+The heat index is 82.
+ Last Updated on Jul 23 2020, 8:53 pm CDT.  
+      </description>
+      <guid isPermaLink="false">Thu, 23 Jul 2020 20:53:00 -0500</guid>
+      </item>
+      </channel>
+      </rss>

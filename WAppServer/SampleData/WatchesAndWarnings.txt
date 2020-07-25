@@ -1,0 +1,4 @@
+https://alerts.weather.gov/cap/wwaatmget.php?x=TXZ012&y=0
+
+TXZ012 	Potter
+TXZ017 	Randall

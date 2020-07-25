@@ -1,0 +1,1302 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+
+<!--
+This atom/xml feed is an index to active advisories, watches and warnings 
+issued by the National Weather Service.  This index file is not the complete 
+Common Alerting Protocol (CAP) alert message.  To obtain the complete CAP 
+alert, please follow the links for each entry in this index.  Also note the 
+CAP message uses a style sheet to convey the information in a human readable 
+format.  Please view the source of the CAP message to see the complete data 
+set.  Not all information in the CAP message is contained in this index of 
+active alerts.
+-->
+
+<feed
+xmlns = 'http://www.w3.org/2005/Atom'
+xmlns:cap = 'urn:oasis:names:tc:emergency:cap:1.1'
+xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
+>
+<!-- http-date = Thu, 23 Jul 2020 10:07:00 GMT -->
+<id>https://alerts.weather.gov/cap/tx.php?x=0</id>
+<logo>http://alerts.weather.gov/images/xml_logo.gif</logo>
+<generator>NWS CAP Server</generator>
+<updated>2020-07-23T17:07:00-05:00</updated>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Current Watches, Warnings and Advisories for Texas Issued by the National Weather Service</title>
+<link href="https://alerts.weather.gov/cap/tx.php?x=0"/>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE88DC.HurricaneLocalStatement.125F58FB3050TX.BROHLSBRO.8b84f2566f9722cc4e810da48a81332a</id>
+<updated>2020-07-23T17:07:00-05:00</updated>
+<published>2020-07-23T17:07:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hurricane Local Statement issued July 23 at 5:07PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE88DC.HurricaneLocalStatement.125F58FB3050TX.BROHLSBRO.8b84f2566f9722cc4e810da48a81332a"/>
+<summary>This product covers The Rio Grande Valley and Deep South Texas **Tropical Depression 8 on the edge of becoming a Tropical Storm** NEW INFORMATION --------------- * CHANGES TO WATCHES AND WARNINGS: - The Tropical Storm Watch has been upgraded to a Tropical</summary>
+<cap:event>Hurricane Local Statement</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Coastal Kenedy; Coastal Willacy; Inland Kenedy</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048261 048489</value>
+<valueName>UGC</valueName>
+<value>TXZ251 TXZ256 TXZ351</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE7360.HurricaneLocalStatement.125F58FB5760TX.CRPHLSCRP.736f9470442790c468d48d789d8e4c4d</id>
+<updated>2020-07-23T16:52:00-05:00</updated>
+<published>2020-07-23T16:52:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hurricane Local Statement issued July 23 at 4:52PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE7360.HurricaneLocalStatement.125F58FB5760TX.CRPHLSCRP.736f9470442790c468d48d789d8e4c4d"/>
+<summary>This product covers South Texas ...TROPICAL DEPRESSION EIGHT CONTINUES TOWARD THE TEXAS COAST... NEW INFORMATION --------------- * CHANGES TO WATCHES AND WARNINGS: - The Tropical Storm Watch has been upgraded to a Tropical Storm</summary>
+<cap:event>Hurricane Local Statement</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Aransas Islands; Bee; Calhoun Islands; Coastal Aransas; Coastal Calhoun; Coastal Kleberg; Coastal Nueces; Coastal Refugio; Coastal San Patricio; Goliad; Inland Calhoun; Inland Kleberg; Inland Nueces; Inland Refugio; Inland San Patricio; Kleberg Islands; Nueces Islands; Victoria</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048007 048025 048057 048175 048273 048355 048391 048409 048469</value>
+<valueName>UGC</valueName>
+<value>TXZ232 TXZ233 TXZ234 TXZ242 TXZ243 TXZ244 TXZ245 TXZ246 TXZ247 TXZ342 TXZ343 TXZ344 TXZ345 TXZ346 TXZ347 TXZ442 TXZ443 TXZ447</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE7360.HurricaneLocalStatement.125F58FB5760TX.HGXHLSHGX.09d9787e1090017ef2fd90d7bcaba2dd</id>
+<updated>2020-07-23T16:52:00-05:00</updated>
+<published>2020-07-23T16:52:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Hurricane Local Statement issued July 23 at 4:52PM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE7360.HurricaneLocalStatement.125F58FB5760TX.HGXHLSHGX.09d9787e1090017ef2fd90d7bcaba2dd"/>
+<summary>This product covers Southeast Texas ...Tropical Storm Warnings Now in effect for Portions of Southeast Texas... NEW INFORMATION --------------- * CHANGES TO WATCHES AND WARNINGS: - The Tropical Storm Watch has been cancelled for Southern Liberty</summary>
+<cap:event>Hurricane Local Statement</cap:event>
+<cap:effective>2020-07-23T16:52:00-05:00</cap:effective>
+<cap:expires>2020-07-24T01:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Austin; Brazoria Islands; Brazos; Burleson; Chambers; Coastal Brazoria; Coastal Galveston; Coastal Harris; Coastal Jackson; Coastal Matagorda; Colorado; Fort Bend; Galveston Island and Bolivar Peninsula; Grimes; Houston; Inland Brazoria; Inland Galveston; Inland Harris; Inland Jackson; Inland Matagorda; Madison; Matagorda Islands; Montgomery; Northern Liberty; Polk; San Jacinto; Southern Liberty; Trinity; Walker; Waller; Washington; Wharton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048015 048039 048041 048051 048071 048089 048157 048167 048185 048201 048225 048239 048291 048313 048321 048339 048373 048407 048455 048471 048473 048477 048481</value>
+<valueName>UGC</valueName>
+<value>TXZ163 TXZ164 TXZ176 TXZ177 TXZ178 TXZ179 TXZ195 TXZ196 TXZ197 TXZ198 TXZ199 TXZ200 TXZ210 TXZ211 TXZ212 TXZ213 TXZ214 TXZ226 TXZ227 TXZ235 TXZ236 TXZ237 TXZ238 TXZ300 TXZ313 TXZ335 TXZ336 TXZ337 TXZ338 TXZ436 TXZ437 TXZ438</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value></value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6D84.TropicalStormWarning.125F58FB41E4TX.BROTCVBRO.888d7dc85adb946b6c70d20994fc9e8b</id>
+<updated>2020-07-23T16:37:00-05:00</updated>
+<published>2020-07-23T16:37:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 4:37PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6D84.TropicalStormWarning.125F58FB41E4TX.BROTCVBRO.888d7dc85adb946b6c70d20994fc9e8b"/>
+<summary>...TROPICAL STORM WARNING REMAINS IN EFFECT... * LOCATIONS AFFECTED - Sarita - King Ranch * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T16:37:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Inland Kenedy</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048261</value>
+<valueName>UGC</valueName>
+<value>TXZ251</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBRO.TR.W.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6D84.TropicalStormWarning.125F58FB41E4TX.BROTCVBRO.261f2f3cb531d7b0d2a3636aa4b587d1</id>
+<updated>2020-07-23T16:37:00-05:00</updated>
+<published>2020-07-23T16:37:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 4:37PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6D84.TropicalStormWarning.125F58FB41E4TX.BROTCVBRO.261f2f3cb531d7b0d2a3636aa4b587d1"/>
+<summary>...TROPICAL STORM WARNING REMAINS IN EFFECT... * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind - Peak Wind Forecast: 35-45 mph with gusts to 60 mph - Window for Tropical Storm force winds: Saturday morning until Saturday evening</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T16:37:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Kenedy</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048261</value>
+<valueName>UGC</valueName>
+<value>TXZ351</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBRO.TR.W.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6D84.TropicalStormWatch.125F58FB41E4TX.BROTCVBRO.672e8f646f8392433a4fb21c29fd27c4</id>
+<updated>2020-07-23T16:37:00-05:00</updated>
+<published>2020-07-23T16:37:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued July 23 at 4:37PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6D84.TropicalStormWatch.125F58FB41E4TX.BROTCVBRO.672e8f646f8392433a4fb21c29fd27c4"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * LOCATIONS AFFECTED - Port Mansfield * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 10-20 mph with gusts to 30 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2020-07-23T16:37:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:45:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Coastal Willacy</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048489</value>
+<valueName>UGC</valueName>
+<value>TXZ256</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KBRO.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.7fc6dbaa5e3273fd69aa019977bf43e4</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.7fc6dbaa5e3273fd69aa019977bf43e4"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * WIND - LATEST LOCAL FORECAST: Tropical storm force winds remain possible</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Inland Jackson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048239</value>
+<valueName>UGC</valueName>
+<value>TXZ235</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHGX.TR.W.1008.200723T2116Z-000000T0000Z/
+/O.UPG.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.435acbdffd268a7de5f7f985819b0d6e</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.435acbdffd268a7de5f7f985819b0d6e"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * WIND - LATEST LOCAL FORECAST: Tropical storm force winds remain possible</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Inland Matagorda</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048321</value>
+<valueName>UGC</valueName>
+<value>TXZ236</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHGX.TR.W.1008.200723T2116Z-000000T0000Z/
+/O.UPG.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.10abb909d5b267e8e6edd61de8f4ba51</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.10abb909d5b267e8e6edd61de8f4ba51"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * WIND - LATEST LOCAL FORECAST: Tropical storm force winds remain possible</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Jackson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048239</value>
+<valueName>UGC</valueName>
+<value>TXZ335</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHGX.TR.W.1008.200723T2116Z-000000T0000Z/
+/O.UPG.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.c5ffce433c6494ba6664c976719d0564</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.c5ffce433c6494ba6664c976719d0564"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * WIND - LATEST LOCAL FORECAST: Tropical storm force winds remain possible</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Matagorda</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048321</value>
+<valueName>UGC</valueName>
+<value>TXZ336</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHGX.TR.W.1008.200723T2116Z-000000T0000Z/
+/O.UPG.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.e19552847ee40263bb6904a49a1302ac</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.e19552847ee40263bb6904a49a1302ac"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * WIND - LATEST LOCAL FORECAST: Tropical storm force winds remain possible</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Brazoria</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048039</value>
+<valueName>UGC</valueName>
+<value>TXZ337</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHGX.TR.W.1008.200723T2116Z-000000T0000Z/
+/O.UPG.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.74093eacd5f33128cbf28b1edf62124e</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.74093eacd5f33128cbf28b1edf62124e"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind - Peak Wind Forecast: 40-50 mph with gusts to 60 mph</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Matagorda Islands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048321</value>
+<valueName>UGC</valueName>
+<value>TXZ436</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHGX.TR.W.1008.200723T2116Z-000000T0000Z/
+/O.UPG.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.5bb5b0e8d4da5bbf9162efbf298849fe</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWarning.125F58FB3C08TX.HGXTCVHGX.5bb5b0e8d4da5bbf9162efbf298849fe"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * WIND - LATEST LOCAL FORECAST: Tropical storm force winds remain possible</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Brazoria Islands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048039</value>
+<valueName>UGC</valueName>
+<value>TXZ437</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KHGX.TR.W.1008.200723T2116Z-000000T0000Z/
+/O.UPG.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.2b3c66ed13f614bd0733df11fcc54f31</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.2b3c66ed13f614bd0733df11fcc54f31"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 10-15 mph with gusts to 20 mph - THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST UNCERTAINTY IN TRACK, SIZE AND INTENSITY: Wind less than 39 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Chambers</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048071</value>
+<valueName>UGC</valueName>
+<value>TXZ214</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.4e394300b2a759ffd6ffaa22e7b34f1c</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.4e394300b2a759ffd6ffaa22e7b34f1c"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 10-15 mph with gusts to 20 mph - THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST UNCERTAINTY IN TRACK, SIZE AND INTENSITY: Wind less than 39 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Wharton</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048481</value>
+<valueName>UGC</valueName>
+<value>TXZ226</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.0affc41630c410ff48117329ae397aba</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.0affc41630c410ff48117329ae397aba"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 10-15 mph with gusts to 20 mph - THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST UNCERTAINTY IN TRACK, SIZE AND INTENSITY: Wind less than 39 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Inland Brazoria</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048039</value>
+<valueName>UGC</valueName>
+<value>TXZ237</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.8d563e318b82893014e8d26dec60b302</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.8d563e318b82893014e8d26dec60b302"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 10-15 mph with gusts to 20 mph - THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST UNCERTAINTY IN TRACK, SIZE AND INTENSITY: Wind less than 39 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Inland Galveston</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048167</value>
+<valueName>UGC</valueName>
+<value>TXZ238</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.94deae6c82e6e3c58f2e49d5e4e8a93e</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.94deae6c82e6e3c58f2e49d5e4e8a93e"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 10-15 mph with gusts to 20 mph - THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST UNCERTAINTY IN TRACK, SIZE AND INTENSITY: Wind less than 39 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Coastal Harris</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048201</value>
+<valueName>UGC</valueName>
+<value>TXZ313</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.e088ee4a6a2c881e4eba535f7534f633</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.e088ee4a6a2c881e4eba535f7534f633"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 10-15 mph with gusts to 25 mph - THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST UNCERTAINTY IN TRACK, SIZE AND INTENSITY: Wind less than 39 mph</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Coastal Galveston</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048167</value>
+<valueName>UGC</valueName>
+<value>TXZ338</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.177ed0453229c196bea3e5bbfb7fb4d6</id>
+<updated>2020-07-23T16:16:00-05:00</updated>
+<published>2020-07-23T16:16:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Watch issued July 23 at 4:16PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE6550.TropicalStormWatch.125F58FB3C08TX.HGXTCVHGX.177ed0453229c196bea3e5bbfb7fb4d6"/>
+<summary>...TROPICAL STORM WATCH REMAINS IN EFFECT... * WIND - LATEST LOCAL FORECAST: Below tropical storm force wind - Peak Wind Forecast: 10-20 mph with gusts to 25 mph - THREAT TO LIFE AND PROPERTY THAT INCLUDES TYPICAL FORECAST UNCERTAINTY IN TRACK, SIZE AND INTENSITY: Potential for wind 39</summary>
+<cap:event>Tropical Storm Watch</cap:event>
+<cap:effective>2020-07-23T16:16:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:30:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Future</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Possible</cap:certainty>
+<cap:areaDesc>Galveston Island and Bolivar Peninsula</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048167</value>
+<valueName>UGC</valueName>
+<value>TXZ438</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.CON.KHGX.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4EA8.CoastalFloodAdvisory.125F58FCB6F0TX.LCHCFWLCH.b587a2b9bbcad2afa94372735ef4522c</id>
+<updated>2020-07-23T15:58:00-05:00</updated>
+<published>2020-07-23T15:58:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Coastal Flood Advisory issued July 23 at 3:58PM CDT until July 24 at 10:00AM CDT by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4EA8.CoastalFloodAdvisory.125F58FCB6F0TX.LCHCFWLCH.b587a2b9bbcad2afa94372735ef4522c"/>
+<summary>...COASTAL FLOOD ADVISORY IN EFFECT FROM 5 AM TO 10 AM CDT FRIDAY... * WHAT...Minor coastal flooding expected. * WHERE...In Louisiana, Vermilion, Iberia, St. Mary, West Cameron and East Cameron Counties. In Texas, Jefferson County. * WHEN...From 5 AM to 10 AM CDT Friday.</summary>
+<cap:event>Coastal Flood Advisory</cap:event>
+<cap:effective>2020-07-24T05:00:00-05:00</cap:effective>
+<cap:expires>2020-07-24T10:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Minor</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Jefferson</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048245</value>
+<valueName>UGC</valueName>
+<value>TXZ215</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KLCH.CF.Y.0005.200724T1000Z-200724T1500Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.2448b3785d36b58e42fc8c91f16cd514</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.2448b3785d36b58e42fc8c91f16cd514"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Beeville * WIND</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Bee</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048025</value>
+<valueName>UGC</valueName>
+<value>TXZ232</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.42e11d6bb5cbf7f7946f7332bda10a0e</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.42e11d6bb5cbf7f7946f7332bda10a0e"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Goliad * WIND</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Goliad</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048175</value>
+<valueName>UGC</valueName>
+<value>TXZ233</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.e64fc874002870d2f02bbcbcf47bae19</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.e64fc874002870d2f02bbcbcf47bae19"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Victoria - Bloomington</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Victoria</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048469</value>
+<valueName>UGC</valueName>
+<value>TXZ234</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.f111190740c73cebd5f910c8b699d285</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.f111190740c73cebd5f910c8b699d285"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Kingsville - Loyola Beach</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Inland Kleberg</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048273</value>
+<valueName>UGC</valueName>
+<value>TXZ242</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.d8af2cc73421d7ea867f0192e2baaebe</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.d8af2cc73421d7ea867f0192e2baaebe"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Agua Dulce - Banquete</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Inland Nueces</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048355</value>
+<valueName>UGC</valueName>
+<value>TXZ243</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.2a443539b0b70387339840d913003f64</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.2a443539b0b70387339840d913003f64"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Mathis - Sinton</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Inland San Patricio</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048409</value>
+<valueName>UGC</valueName>
+<value>TXZ244</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.6e8e6004a57cba3478a612de40811d5f</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.6e8e6004a57cba3478a612de40811d5f"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Rockport - Fulton</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Aransas</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048007</value>
+<valueName>UGC</valueName>
+<value>TXZ245</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.d646d271aa4c28eb88ae9e9973642b91</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.d646d271aa4c28eb88ae9e9973642b91"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Refugio - Woodsboro</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Inland Refugio</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048391</value>
+<valueName>UGC</valueName>
+<value>TXZ246</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.0975e3e22c5728a1c5375608102ee8dc</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.0975e3e22c5728a1c5375608102ee8dc"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Kamay - Long Mott</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Inland Calhoun</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048057</value>
+<valueName>UGC</valueName>
+<value>TXZ247</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.e2a7d1704b3bf1b8a57543ae5dee94d7</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.e2a7d1704b3bf1b8a57543ae5dee94d7"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind - Peak Wind Forecast: 40-50 mph with gusts to 65 mph</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Kleberg</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048273</value>
+<valueName>UGC</valueName>
+<value>TXZ342</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.cacabe2a6da0220a1d43e04a51bb1bfc</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.cacabe2a6da0220a1d43e04a51bb1bfc"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Corpus Christi - Flour Bluff</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Nueces</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048355</value>
+<valueName>UGC</valueName>
+<value>TXZ343</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.5962128f84faef73c33280167ef3b961</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.5962128f84faef73c33280167ef3b961"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Aransas Pass - Ingleside</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal San Patricio</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048409</value>
+<valueName>UGC</valueName>
+<value>TXZ344</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.721c74995f18185f40e4d111d22256ba</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.721c74995f18185f40e4d111d22256ba"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind - Peak Wind Forecast: 45-55 mph with gusts to 75 mph</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Aransas Islands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048007</value>
+<valueName>UGC</valueName>
+<value>TXZ345</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.94c801565dbaa752eedf0e7cf999509e</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.94c801565dbaa752eedf0e7cf999509e"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Bayside - Austwell</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Refugio</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048391</value>
+<valueName>UGC</valueName>
+<value>TXZ346</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.e0762cc99de2278e2db5a4aeb25a619e</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.e0762cc99de2278e2db5a4aeb25a619e"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Port Lavaca - Port OConnor</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Coastal Calhoun</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048057</value>
+<valueName>UGC</valueName>
+<value>TXZ347</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.06060ca2c8f992b7a76ef2caa76483c7</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.06060ca2c8f992b7a76ef2caa76483c7"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Malaquite Beach * WIND</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Kleberg Islands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048273</value>
+<valueName>UGC</valueName>
+<value>TXZ442</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.ce5d0f33af329a4cb1a939c2a29eb02f</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.ce5d0f33af329a4cb1a939c2a29eb02f"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * LOCATIONS AFFECTED - Mustang Island - Port Aransas</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Nueces Islands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048355</value>
+<valueName>UGC</valueName>
+<value>TXZ443</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+<entry>
+<id>https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.eef8a91e66f7ac2fb7416c7300b7e522</id>
+<updated>2020-07-23T15:55:00-05:00</updated>
+<published>2020-07-23T15:55:00-05:00</published>
+<author>
+<name>w-nws.webmaster@noaa.gov</name>
+</author>
+<title>Tropical Storm Warning issued July 23 at 3:55PM CDT until further notice by NWS</title>
+<link href="https://alerts.weather.gov/cap/wwacapget.php?x=TX125F58EE4D7C.TropicalStormWarning.125F58FB3050TX.CRPTCVCRP.eef8a91e66f7ac2fb7416c7300b7e522"/>
+<summary>...TROPICAL STORM WARNING IN EFFECT... A Tropical Storm Warning means tropical storm-force winds are expected somewhere within this area within the next 36 hours * WIND - LATEST LOCAL FORECAST: Equivalent Tropical Storm force wind - Peak Wind Forecast: 45-55 mph with gusts to 70 mph</summary>
+<cap:event>Tropical Storm Warning</cap:event>
+<cap:effective>2020-07-23T15:55:00-05:00</cap:effective>
+<cap:expires>2020-07-24T00:00:00-05:00</cap:expires>
+<cap:status>Actual</cap:status>
+<cap:msgType>Alert</cap:msgType>
+<cap:category>Met</cap:category>
+<cap:urgency>Expected</cap:urgency>
+<cap:severity>Severe</cap:severity>
+<cap:certainty>Likely</cap:certainty>
+<cap:areaDesc>Calhoun Islands</cap:areaDesc>
+<cap:polygon></cap:polygon>
+<cap:geocode>
+<valueName>FIPS6</valueName>
+<value>048057</value>
+<valueName>UGC</valueName>
+<value>TXZ447</value>
+</cap:geocode>
+<cap:parameter>
+<valueName>VTEC</valueName>
+<value>/O.NEW.KCRP.TR.W.1008.200723T2055Z-000000T0000Z/
+/O.UPG.KCRP.TR.A.1008.000000T0000Z-000000T0000Z/</value>
+</cap:parameter>
+</entry>
+</feed>
