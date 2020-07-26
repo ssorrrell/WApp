@@ -162,6 +162,12 @@
     <Folder Include="DBConnection\" />
     <Folder Include="Helpers\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WAppServer\WAppServer.csproj">
+      <Project>{8d81a94c-c94b-4c68-b463-d3d3c9dad9e4}</Project>
+      <Name>WAppServer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

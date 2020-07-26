@@ -159,6 +159,16 @@
     <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WAppServer.Framework\WAppServer.Framework.csproj">
+      <Project>{de56d506-4764-48d1-98d9-154c94659ac6}</Project>
+      <Name>WAppServer.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WAppServer.Objects\WAppServer.Objects.csproj">
+      <Project>{ae45a328-3991-43bb-b9fe-a84ec25eb494}</Project>
+      <Name>WAppServer.Objects</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
