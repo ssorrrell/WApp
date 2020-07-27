@@ -6,7 +6,11 @@
 
   <ItemGroup>
     <Folder Include="Common\" />
-    <Folder Include="DBConnection\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.7.2" />
   </ItemGroup>
 
   <ItemGroup>
