@@ -14,7 +14,6 @@ namespace WAppServer.Objects.Models
             lazy =
             new Lazy<ActivityLog>
                 (() => new ActivityLog());
-
         public static ActivityLog Instance { get { return lazy.Value; } }
 
         private ActivityLog()
