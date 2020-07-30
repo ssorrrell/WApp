@@ -13,11 +13,6 @@ namespace WAppServer.Migrate.StaticData
     {
         public LoadStaticData()
         {
-            /*var layerTypes = Enum.GetValues(typeof(LayerType));
-            var sqlList = new List<string>();
-            foreach(var v in layerTypes)
-                sqlList.Add($"INSERT INTO RadarFiles (ICAO, LayerType VALUES ('KAMA', {v});");*/
-
         }
 
         public int RadarSites()
@@ -31,7 +26,8 @@ namespace WAppServer.Migrate.StaticData
                     State = "TX",
                     City = "Amarillo",
                     ICAO = "KAMA",
-                    Nexrad = "AMARILLO"
+                    Nexrad = "AMARILLO",
+                    StationID = "AMA"
                 };
                 radarSiteManager.Create(radarSite);
                 radarSite = new RadarSite
@@ -39,7 +35,8 @@ namespace WAppServer.Migrate.StaticData
                     State = "NM",
                     City = "Albuquerque",
                     ICAO = "KABX",
-                    Nexrad = "ALBUQUERQUE"
+                    Nexrad = "ALBUQUERQUE",
+                    StationID = "ABQ"
                 };
                 radarSiteManager.Create(radarSite);
                 radarSite = new RadarSite
@@ -47,7 +44,8 @@ namespace WAppServer.Migrate.StaticData
                     State = "OK",
                     City = "Tulsa",
                     ICAO = "KINX",
-                    Nexrad = "TULSA"
+                    Nexrad = "TULSA",
+                    StationID = "TSA"
                 };
                 radarSiteManager.Create(radarSite);
                 radarSite = new RadarSite
@@ -55,7 +53,8 @@ namespace WAppServer.Migrate.StaticData
                     State = "TX",
                     City = "Lubbock",
                     ICAO = "KLBB",
-                    Nexrad = "LUBBOCK"
+                    Nexrad = "LUBBOCK",
+                    StationID = "LUB"
                 };
                 radarSiteManager.Create(radarSite);
                 radarSite = new RadarSite
@@ -63,7 +62,8 @@ namespace WAppServer.Migrate.StaticData
                     State = "OR",
                     City = "Portland",
                     ICAO = "KRTX",
-                    Nexrad = "PORTLAND"
+                    Nexrad = "PORTLAND",
+                    StationID = "PQR"
                 };
                 radarSiteManager.Create(radarSite);
             }

@@ -10,7 +10,6 @@ namespace WAppServer.Migrate
         {
             var sql = "CREATE TABLE [dbo].[CurrentConditions] (";
             sql += "[ID] INT IDENTITY(1, 1) NOT NULL, ";
-            sql += "[UGC]  NVARCHAR(MAX) NULL, ";
             sql += "[Location]  NVARCHAR(MAX) NULL, ";
             sql += "[SugPickup]  NVARCHAR(MAX) NULL, ";
             sql += "[SugPickupPeriod]  INT NULL, ";

@@ -35,7 +35,7 @@ namespace WAppServer.Framework.Data
             return result;
         }
 
-        public int CreateList(List<IEntity> entityList)
+        public int CreateList(IEnumerable<IEntity> entityList)
         {
             string sql = $"INSERT INTO {IEntity.TableName}";
 
@@ -55,10 +55,10 @@ namespace WAppServer.Framework.Data
             return result;
         }
 
-        public int DeleteList(List<int> idList)
+        public int DeleteList(IEnumerable<int> idList)
         {
             string sql = $"DELETE FROM {IEntity.TableName} WHERE ID = @ID;";
-            int result = SqlConnection.Execute(sql);
+            int result = SqlConnection.Execute(sql, idList);
             return result;
         }
 
@@ -80,21 +80,21 @@ namespace WAppServer.Framework.Data
             return firstOrDefaultEntities;
         }
 
-        public List<IEntity> GetList(string where = null, string orderBy = null)
+        public IEnumerable<IEntity> GetList(string where = null, string orderBy = null)
         {
             string sql = $"SELECT * FROM  {IEntity.TableName}";
             if (string.IsNullOrEmpty(where))
                 sql += $" WHERE {where}";
             if (string.IsNullOrEmpty(orderBy))
                 sql += $" ORDER BY {orderBy};";
-            List<IEntity> listOfEntities = SqlConnection.Query<IEntity>(sql).ToList();
+            IEnumerable<IEntity> listOfEntities = SqlConnection.Query<IEntity>(sql).ToList();
             return listOfEntities;
         }
 
-        public List<IEntity> GetAll()
+        public IEnumerable<IEntity> GetAll()
         {
             string sql = $"SELECT * FROM  {IEntity.TableName};";
-            List<IEntity> listOfEntities = SqlConnection.Query<IEntity>(sql).ToList();
+            IEnumerable<IEntity> listOfEntities = SqlConnection.Query<IEntity>(sql).ToList();
             return listOfEntities;           
         }
 
@@ -110,7 +110,7 @@ namespace WAppServer.Framework.Data
             return result;
         }
 
-        public int UpdateList(List<IEntity> entityList)
+        public int UpdateList(IEnumerable<IEntity> entityList)
         {
             string sql = $"UPDATE {IEntity.TableName} SET ";
 

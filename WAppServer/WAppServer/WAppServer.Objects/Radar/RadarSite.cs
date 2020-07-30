@@ -13,5 +13,6 @@ namespace WAppServer.Objects.Radar
         public string City;
         public string State;
         public string ICAO;
+        public string StationID;
     }
 }

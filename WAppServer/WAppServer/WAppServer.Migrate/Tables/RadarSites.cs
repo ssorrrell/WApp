@@ -14,6 +14,7 @@ namespace WAppServer.Migrate
             sql += "[City] NVARCHAR(MAX) NULL, ";
             sql += "[State] NVARCHAR(MAX) NULL, ";
             sql += "[ICAO] NVARCHAR(MAX) NULL, ";
+            sql += "[StationID] NVARCHAR(MAX) NULL, ";
             sql += "CONSTRAINT[PK_dbo.RadarSites] PRIMARY KEY CLUSTERED([ID] ASC)); ";
             return sql;
         }
