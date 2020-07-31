@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Text;
-using System.Transactions;
+
 using WAppServer.Framework.Data;
 
 namespace WAppServer.Objects.Forecasts
@@ -32,6 +31,7 @@ namespace WAppServer.Objects.Forecasts
             }
             set
             {
+                _dailyMinTemp = value;
                 if (_dailyMinTemp != null)
                     SetForecastDetails(_dailyMinTemp);
             }
@@ -48,6 +48,7 @@ namespace WAppServer.Objects.Forecasts
             }
             set
             {
+                _dailyMaxTemp = value;
                 if (_dailyMaxTemp != null)
                     SetForecastDetails(_dailyMaxTemp);
             }
@@ -64,6 +65,7 @@ namespace WAppServer.Objects.Forecasts
             }
             set
             {
+                _hourlyProbPrecip = value;
                 if (_hourlyProbPrecip != null)
                     SetForecastDetails(_hourlyProbPrecip);
             }
@@ -80,6 +82,7 @@ namespace WAppServer.Objects.Forecasts
             }
             set
             {
+                _weatherType = value;
                 if (_weatherType != null)
                     SetForecastText(_weatherType);
             }
@@ -96,6 +99,7 @@ namespace WAppServer.Objects.Forecasts
             }
             set
             {
+                _forecastText = value;
                 if (_forecastText != null)
                     SetForecastText(_forecastText);
             }
@@ -105,7 +109,7 @@ namespace WAppServer.Objects.Forecasts
 
         private List<ForecastDetails> GetForecastDetails(ForecastDetails.Detail detailType)
         {
-            return (List<ForecastDetails>)_forecastDetailsManager.GetList($"[DetailType] = {detailType}", " [ID} Asc ");
+            return (List<ForecastDetails>)_forecastDetailsManager.GetList($"[DetailType] = {detailType} AND [ForecastID] = { ID }", " [ID] Asc ");
         }
         private int SetForecastDetails(List<ForecastDetails> forecastDetails)
         {
@@ -114,7 +118,7 @@ namespace WAppServer.Objects.Forecasts
 
         private List<ForecastText> GetForecastText(ForecastText.Text textType)
         {
-            return (List<ForecastText>)_forecastTextManager.GetList($"[TextType] = {textType}", " [ID} Asc ");
+            return (List<ForecastText>)_forecastTextManager.GetList($"[TextType] = {textType} AND [ForecastID] = { ID }", " [ID] Asc ");
         }
         private int SetForecastText(List<ForecastText> forecastTexts)
         {
