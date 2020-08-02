@@ -14,7 +14,7 @@ namespace WAppServer.Framework.Data
 {
     public class EntityManager : IEntityManager<IEntity>
     {
-        SqlConnection SqlConnection { get; set; }
+        protected SqlConnection SqlConnection { get; set; }
 
         public EntityManager(SqlConnection sqlConnection)
         {

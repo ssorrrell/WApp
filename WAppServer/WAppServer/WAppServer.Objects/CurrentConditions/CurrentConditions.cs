@@ -25,5 +25,7 @@ namespace WAppServer.Objects.CurrentConditions
         public decimal DewPointF;
         public decimal VisibilityMiles;
         public DateTime DateStamp;
+
+        public const string UrlTemplate = "https://w1.weather.gov/xml/current_obs/xxxx.xml";
     }
 }
