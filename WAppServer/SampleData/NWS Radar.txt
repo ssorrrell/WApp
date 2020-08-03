@@ -14,6 +14,9 @@ List of Radar Sites
 https://www.roc.noaa.gov/WSR88D/Program/NetworkSites.aspx
 https://www.roc.noaa.gov/WSR88D/Maps.aspx
 
+Forecast
+https://forecast.weather.gov/MapClick.php?lat=35.214150000000075&lon=-101.86697499999997
+
 At present, there are three ways to obtain images from the RIDGE radar.
 
     Grunt method. Use the overlay toggles and "right click" on each layer to save it to the local computer. Remember, this only saves the right-most image as indicated by the toggle bar.

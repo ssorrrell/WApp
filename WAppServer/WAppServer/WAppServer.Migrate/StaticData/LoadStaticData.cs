@@ -81,6 +81,8 @@ namespace WAppServer.Migrate.StaticData
                     State = "TX",
                     Office = "Amarillo",
                     CallSign = "AMA",
+                    Longitude = (decimal)-101.705,
+                    Latitude = (decimal)35.229,
                 };
                 forecastOfficeManager.Create(forecastOffice);
                 forecastOffice = new ForecastOffice
@@ -88,6 +90,8 @@ namespace WAppServer.Migrate.StaticData
                     State = "TX",
                     Office = "Lubbock",
                     CallSign = "LUB",
+                    Longitude = (decimal)-101.810,
+                    Latitude = (decimal)33.650,
                 };
                 forecastOfficeManager.Create(forecastOffice);
                 forecastOffice = new ForecastOffice
@@ -95,6 +99,8 @@ namespace WAppServer.Migrate.StaticData
                     State = "NM",
                     Office = "Albuquerque",
                     CallSign = "ABQ",
+                    Longitude = (decimal)-106.819,
+                    Latitude = (decimal)35.146,
                 };
                 forecastOfficeManager.Create(forecastOffice);
                 forecastOffice = new ForecastOffice
@@ -102,6 +108,8 @@ namespace WAppServer.Migrate.StaticData
                     State = "OK",
                     Office = "Tulsa",
                     CallSign = "TSA",
+                    Longitude = (decimal)-95.560,
+                    Latitude = (decimal)36.171,
                 };
                 forecastOfficeManager.Create(forecastOffice);
                 forecastOffice = new ForecastOffice
@@ -109,6 +117,8 @@ namespace WAppServer.Migrate.StaticData
                     State = "OR",
                     Office = "Portland",
                     CallSign = "PQR",
+                    Longitude = (decimal)-122.959,
+                    Latitude = (decimal)45.710,
                 };
                 forecastOfficeManager.Create(forecastOffice);
             }
@@ -130,6 +140,13 @@ namespace WAppServer.Migrate.StaticData
                 observationSiteManager.Create(observationSite);
                 observationSite = new ObservationSite
                 {
+                    State = "TX",
+                    Office = "Lubbock",
+                    CallSign = "KLBB",
+                };
+                observationSiteManager.Create(observationSite);
+                observationSite = new ObservationSite
+                {
                     State = "NM",
                     Office = "Albuquerque",
                     CallSign = "KABX",
@@ -140,13 +157,6 @@ namespace WAppServer.Migrate.StaticData
                     State = "OK",
                     Office = "Tulsa",
                     CallSign = "KINX",
-                };
-                observationSiteManager.Create(observationSite);
-                observationSite = new ObservationSite
-                {
-                    State = "TX",
-                    Office = "Lubbock",
-                    CallSign = "KLBB",
                 };
                 observationSiteManager.Create(observationSite);
                 observationSite = new ObservationSite

@@ -56,28 +56,29 @@ namespace WAppServer.Objects.Helpers
         }
 
         //*************************** XElement Functions ******************************************
-        public static string ConvertXElementToString(XElement from)
+        public static string GetStringFromValue(XElement from)
         {
             string result = "";
             if (from != null)
                 result = from.Value.ToString();
             return result;
         }
-        public static decimal ConvertXElementToDecimal(XElement from)
+        public static decimal GetDecimalFromValue(XElement from)
         {
             decimal result = 0;
             if (from != null)
-                result = Convert.ToDecimal(from.Value.ToString());
+                if (!string.IsNullOrEmpty(from.Value.ToString()))
+                    result = Convert.ToDecimal(from.Value.ToString());
             return result;
         }
-        public static int ConvertXElementToInt(XElement from)
+        public static int GetIntFromValue(XElement from)
         {
             int result = 0;
             if (from != null)
                 result = Convert.ToInt32(from.Value.ToString());
             return result;
         }
-        public static DateTime ConvertXElementToDateTime(XElement from)
+        public static DateTime GetDateTimeFromValue(XElement from)
         {
             string dateString = "";
             if (from != null)
@@ -86,6 +87,20 @@ namespace WAppServer.Objects.Helpers
             string format = "ddd, dd MMM yyyy HH:mm:ss K";
             var result = DateTime.ParseExact(dateString, format, cultureInfo);
             return result;
+        }
+        public static string GetStringValueFromAttribute(XElement from, string attributeName)
+        {
+            var value = "";
+            var attributeList = from.Attributes();
+            foreach (var a in attributeList)
+            {
+                if (a.Name == attributeName)
+                {
+                    value = a.Value;
+                    break;
+                }
+            }
+            return value;
         }
     }
 }

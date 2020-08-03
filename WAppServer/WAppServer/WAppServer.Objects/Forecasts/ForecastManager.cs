@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -17,13 +18,15 @@ namespace WAppServer.Objects.Forecasts
         {
         }
 
-        public async Task UpdateAsync(string callSign)
+        public async Task UpdateAsync(string callSign, string latitude, string longitude)
         {
             //download file
             var localPath = Path.Combine(Constants.BaseFilePath, "Forecasts", callSign);
-            var url = Forecast.UrlTemplate.Replace("xxxx", callSign);
+            var url = Forecast.UrlTemplate.Replace("xxxx", latitude).Replace("yyyy", longitude);
             var result = await RssHelper.GetStreamAsync(url, localPath);
             //parse file
+            var doc = XDocument.Load(localPath);
+            var forecast = GetForecastFromXDoc(doc);
             //save to db
         }
 
@@ -32,32 +35,83 @@ namespace WAppServer.Objects.Forecasts
             var returnForecast = new Forecast(SqlConnection);
 
             //populate forecast
-            List<ForecastDetails> maxDailyTempList = new List<ForecastDetails>();
-            List<ForecastDetails> minDailyTempList = new List<ForecastDetails>();
-            List<ForecastDetails> hourlyPrecipProbList = new List<ForecastDetails>();
+            Dictionary<string,List<string>> timeLayoutKeys = new Dictionary<string, List<string>>();
             foreach (var forecastNode in doc.Descendants("data"))
             {
                 if (forecastNode == null)
                     continue;
-                if (forecastNode.FirstAttribute != null && forecastNode.FirstAttribute.Value == "forecast")
+                var attributeValue = RssHelper.GetStringValueFromAttribute(forecastNode, "type");
+                if (!string.IsNullOrEmpty(attributeValue) && attributeValue == "forecast")
                 {
                     foreach (var forecastNodeChild in forecastNode.Descendants())
                     {
+                        if (forecastNodeChild.Name == "time-layout")
+                        {
+                            var name = "";
+                            var timeLayoutList = new List<string>();
+                            foreach (var parameterNodeChild in forecastNodeChild.Descendants())
+                            {
+                                if (parameterNodeChild.Name == "layout-key")
+                                {
+                                    name = parameterNodeChild.Value;
+                                }
+                                if (parameterNodeChild.Name == "start-valid-time")
+                                {
+                                    var paramAttributeValue = RssHelper.GetStringValueFromAttribute(parameterNodeChild, "period-name");
+                                    if (!string.IsNullOrEmpty(paramAttributeValue))
+                                        timeLayoutList.Add(paramAttributeValue);
+                                }
+                            }
+                            if (!string.IsNullOrEmpty(name) && timeLayoutList.Count > 0)
+                                timeLayoutKeys.Add(name, timeLayoutList);
+                        }
                         if (forecastNodeChild.Name == "parameters")
                         {
                             foreach (var parameterNodeChild in forecastNodeChild.Descendants()) //temperature or probability-of-precipitation
                             {
-                                if (parameterNodeChild.FirstAttribute != null && parameterNodeChild.FirstAttribute.Value == "minimum")
+                                var paramNodeAttributeValue = RssHelper.GetStringValueFromAttribute(parameterNodeChild, "type");
+                                if (parameterNodeChild.Name == "temperature" && !string.IsNullOrEmpty(paramNodeAttributeValue) && paramNodeAttributeValue == "minimum")
                                 {
-                                    minDailyTempList = GetForecastDetailList(parameterNodeChild, ForecastDetails.Detail.DailyMinTemp);
+                                    var timeLayoutValue = RssHelper.GetStringValueFromAttribute(parameterNodeChild, "time-layout");
+                                    var timeLayout = timeLayoutKeys[timeLayoutValue];
+                                    var minDailyTempList = GetForecastDetailList(parameterNodeChild, ForecastDetails.Detail.DailyMinTemp, timeLayout);
+                                    returnForecast.DailyMinTemp = minDailyTempList;
                                 }
-                                if (parameterNodeChild.FirstAttribute != null && parameterNodeChild.FirstAttribute.Value == "maximum")
+                                paramNodeAttributeValue = RssHelper.GetStringValueFromAttribute(parameterNodeChild, "type");
+                                if (parameterNodeChild.Name == "temperature" && !string.IsNullOrEmpty(paramNodeAttributeValue) && paramNodeAttributeValue == "maximum")
                                 {
-                                    minDailyTempList = GetForecastDetailList(parameterNodeChild, ForecastDetails.Detail.DailyMaxTemp);
+                                    var timeLayoutValue = RssHelper.GetStringValueFromAttribute(parameterNodeChild, "time-layout");
+                                    var timeLayout = timeLayoutKeys[timeLayoutValue];
+                                    var maxDailyTempList = GetForecastDetailList(parameterNodeChild, ForecastDetails.Detail.DailyMaxTemp, timeLayout);
+                                    returnForecast.DailyMaxTemp = maxDailyTempList;
                                 }
-                                if (parameterNodeChild.Name == "probability-of-precipitation ")
+                                paramNodeAttributeValue = RssHelper.GetStringValueFromAttribute(parameterNodeChild, "type");
+                                if (parameterNodeChild.Name == "probability-of-precipitation" && !string.IsNullOrEmpty(paramNodeAttributeValue) && paramNodeAttributeValue == "12 hour")
                                 {
-                                    hourlyPrecipProbList = GetForecastDetailList(parameterNodeChild, ForecastDetails.Detail.HourlyProbPrecip);
+                                    var timeLayoutValue = RssHelper.GetStringValueFromAttribute(parameterNodeChild, "time-layout");
+                                    var timeLayout = timeLayoutKeys[timeLayoutValue];
+                                    var hourlyPrecipProbList = GetForecastDetailList(parameterNodeChild, ForecastDetails.Detail.HourlyProbPrecip, timeLayout);
+                                    returnForecast.HourlyProbPrecip = hourlyPrecipProbList;
+                                }
+                                if (parameterNodeChild.Name == "weather")
+                                {
+                                    var timeLayoutValue = RssHelper.GetStringValueFromAttribute(parameterNodeChild, "time-layout");
+                                    if (!string.IsNullOrEmpty(timeLayoutValue) && timeLayoutKeys.ContainsKey(timeLayoutValue))
+                                    {
+                                        var timeLayout = timeLayoutKeys[timeLayoutValue];
+                                        var weatherType = GetForecastWeatherList(parameterNodeChild, ForecastText.Text.WeatherType, timeLayout);
+                                        returnForecast.WeatherType = weatherType;
+                                    }
+                                }
+                                if (parameterNodeChild.Name == "wordedForecast")
+                                {
+                                    var timeLayoutValue = RssHelper.GetStringValueFromAttribute(parameterNodeChild, "time-layout");
+                                    if (!string.IsNullOrEmpty(timeLayoutValue) && timeLayoutKeys.ContainsKey(timeLayoutValue))
+                                    {
+                                        var timeLayout = timeLayoutKeys[timeLayoutValue];
+                                        var weatherText = GetForecastTextList(parameterNodeChild, ForecastText.Text.ForecastText, timeLayout);
+                                        returnForecast.ForecastText = weatherText;
+                                    }
                                 }
                             }
                         }
@@ -69,20 +123,65 @@ namespace WAppServer.Objects.Forecasts
             return returnForecast;
         }
 
-        private List<ForecastDetails> GetForecastDetailList(XElement parameterNodeChild, ForecastDetails.Detail detailType)
+        private List<ForecastDetails> GetForecastDetailList(XElement parameterNodeChild, ForecastDetails.Detail detailType, List<string> timeLayout)
         {
+            int i = -1;
             var detailList = new List<ForecastDetails>();
-            if (parameterNodeChild.FirstAttribute != null && parameterNodeChild.FirstAttribute.Value == "minimum")
+            foreach (var value in parameterNodeChild.Descendants())
             {
-                foreach (var value in parameterNodeChild.Descendants())
-                {
+                if (i >= 0)
+                {   //skip the first one, that is text
                     var newDetail = new ForecastDetails()
                     {
                         DetailType = detailType,
-                        Value = RssHelper.ConvertXElementToDecimal(value)
+                        Name = timeLayout[i],
+                        Value = RssHelper.GetDecimalFromValue(value)
                     };
                     detailList.Add(newDetail);
                 }
+                i++;
+            }
+            return detailList;
+        }
+
+        private List<ForecastText> GetForecastWeatherList(XElement parameterNodeChild, ForecastText.Text textType, List<string> timeLayout)
+        {
+            int i = -1;
+            var detailList = new List<ForecastText>();
+            foreach (var value in parameterNodeChild.Descendants())
+            {
+                if (i >= 0)
+                {   //skip the first one, that is text
+                    var newDetail = new ForecastText()
+                    {
+                        TextType = textType,
+                        Name = timeLayout[i],
+                        Value = RssHelper.GetStringValueFromAttribute(value, "weather-summary"),
+                    };
+                    detailList.Add(newDetail);
+                }
+                i++;
+            }
+            return detailList;
+        }
+
+        private List<ForecastText> GetForecastTextList(XElement parameterNodeChild, ForecastText.Text textType, List<string> timeLayout)
+        {
+            int i = -1;
+            var detailList = new List<ForecastText>();
+            foreach (var value in parameterNodeChild.Descendants())
+            {
+                if (i >= 0)
+                {   //skip the first one, that is text
+                    var newDetail = new ForecastText()
+                    {
+                        TextType = textType,
+                        Name = timeLayout[i],
+                        Value = RssHelper.GetStringFromValue(value)
+                    };
+                    detailList.Add(newDetail);
+                }
+                i++;
             }
             return detailList;
         }

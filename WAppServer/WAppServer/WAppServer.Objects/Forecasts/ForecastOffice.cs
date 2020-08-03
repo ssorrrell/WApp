@@ -11,5 +11,7 @@ namespace WAppServer.Objects.Forecasts
         public string Office;
         public string State;
         public string CallSign;
+        public decimal Latitude;
+        public decimal Longitude;
     }
 }

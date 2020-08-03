@@ -13,6 +13,7 @@ namespace WAppServer.Objects.Forecasts
         }
 
         public int ID;
+        public string Name;
         public decimal Value;
         public Detail DetailType;
         public int ForecastID;

@@ -17,7 +17,7 @@ namespace WAppServer.Objects.Forecasts
             _forecastTextManager = new ForecastTextManager(sqlConnection);
         }
 
-        public const string UrlTemplate = "https://forecast.weather.gov/MapClick.php?lat=35.2026&lon=-101.819&unit=0&lg=english&FcstType=dwml";
+        public const string UrlTemplate = "https://forecast.weather.gov/MapClick.php?lat=xxxx6&lon=yyyy&unit=0&lg=english&FcstType=dwml";
 
         public int ID;
         public int ForecastOfficeID; //ForecastOffice

@@ -13,6 +13,7 @@ namespace WAppServer.Objects.Forecasts
         }
 
         public int ID;
+        public string Name;
         public string Value;
         public Text TextType;
         public int ForecastID;

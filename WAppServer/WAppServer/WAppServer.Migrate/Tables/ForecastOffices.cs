@@ -13,6 +13,8 @@ namespace WAppServer.Migrate
             sql += "[Office] NVARCHAR(MAX) NULL, ";
             sql += "[State] NVARCHAR(MAX) NULL, ";
             sql += "[CallSign] NVARCHAR(MAX) NULL, ";
+            sql += "[Latitude]  DECIMAL(8,6) NULL, ";
+            sql += "[Longitude]  DECIMAL(9,6) NULL, ";
             sql += "CONSTRAINT[PK_dbo.ForecastOffices] PRIMARY KEY CLUSTERED([ID] ASC)); ";
             return sql;
         }
