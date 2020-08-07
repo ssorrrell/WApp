@@ -1,24 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 using Xamarin.Forms;
 
 using WAppClient.Models;
+using WAppClient.Models.Seed;
 using WAppClient.Views;
+using System.Runtime.CompilerServices;
 
 namespace WAppClient.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+    public class ForecastViewModel : BaseViewModel
     {
-        public ObservableCollection<Item> Items { get; set; }
         public Command LoadItemsCommand { get; set; }
 
-        public ItemsViewModel()
+        Forecast _forecast = new Forecast() { DateStamp = DateTime.Now };
+        public Forecast Forecast
         {
-            Title = "Browse";
-            Items = new ObservableCollection<Item>();
+            get { return _forecast; }
+            set { SetProperty(ref _forecast, value); }
+        }
+
+        public ForecastViewModel()
+        {
+            Title = "Forecast";
+            Forecast = SeedData.GetForecastObject();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
         }
 
@@ -28,12 +38,13 @@ namespace WAppClient.ViewModels
 
             try
             {
-                Items.Clear();
+                Forecast = SeedData.GetForecastObject();
+                /*Items.Clear();
                 var items = await DataStore.GetItemsAsync(true);
                 foreach (var item in items)
                 {
                     Items.Add(item);
-                }
+                }*/
             }
             catch (Exception ex)
             {

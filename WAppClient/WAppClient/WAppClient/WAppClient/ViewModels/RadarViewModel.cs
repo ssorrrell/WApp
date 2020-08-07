@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 using Xamarin.Forms;
 
@@ -10,14 +12,14 @@ using WAppClient.Views;
 
 namespace WAppClient.ViewModels
 {
-    public class ItemsViewModel : BaseViewModel
+    public class RadarViewModel : BaseViewModel
     {
         public ObservableCollection<Item> Items { get; set; }
         public Command LoadItemsCommand { get; set; }
 
-        public ItemsViewModel()
+        public RadarViewModel()
         {
-            Title = "Browse";
+            Title = "Radar";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
         }

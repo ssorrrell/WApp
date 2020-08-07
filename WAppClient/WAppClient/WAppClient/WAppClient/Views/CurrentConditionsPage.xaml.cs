@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,25 +13,23 @@ using WAppClient.ViewModels;
 
 namespace WAppClient.Views
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
-    [DesignTimeVisible(false)]
-    public partial class ItemsPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class CurrentConditionsPage : ContentPage
     {
-        ItemsViewModel viewModel;
+        CurrentConditionsViewModel viewModel;
 
-        public ItemsPage()
+        public CurrentConditionsPage()
         {
             InitializeComponent();
 
-            BindingContext = viewModel = new ItemsViewModel();
+            BindingContext = viewModel = new CurrentConditionsViewModel();
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
 
-            if (viewModel.Items.Count == 0)
+            if (viewModel.CurrentCondition == null)
                 viewModel.IsBusy = true;
         }
     }

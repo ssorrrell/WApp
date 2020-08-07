@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vc="clr-namespace:WAppClient.Views.ValueConverters"
+             mc:Ignorable="d"
+             Title="{Binding Title}"
+             x:Class="WAppClient.Views.CurrentConditionsPage"
+             >
+
+    <ContentPage.ToolbarItems>
+
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <vc:FahrenheitConverter x:Key="fahrenheitConverter" />
+            <vc:InchesConverter x:Key="inchesConverter" />
+            <vc:MilesConverter x:Key="milesConverter" />
+            <vc:MPHConverter x:Key="mphConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}" Command="{Binding LoadItemsCommand}">
+        <!--<StackLayout>-->
+        <Grid ColumnSpacing="3" RowSpacing="10" BackgroundColor="Cornsilk">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="1" Text="" />
+            <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                <Label Text="Temperature" FontSize="Large" />
+                <Label Text="{Binding CurrentCondition.TempF, Converter={StaticResource fahrenheitConverter}}" FontSize="Large" />
+            </StackLayout>
+            <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+                <Label Text="Wind"  FontSize="Large" />
+                <Label Text="{Binding CurrentCondition.WindString}" FontSize="Large" />
+            </StackLayout>
+            <StackLayout Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+                <Label Text="Weather"  FontSize="Large" />
+                <Label Text="{Binding CurrentCondition.Weather}" FontSize="Large" />
+            </StackLayout>
+            <StackLayout Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
+                <Label Text="DewPoint"  FontSize="Large" />
+                <Label Text="{Binding CurrentCondition.DewPointF, Converter={StaticResource fahrenheitConverter}}" FontSize="Large" />
+            </StackLayout>
+            <StackLayout Grid.Row="5" Grid.Column="1" Orientation="Horizontal">
+                <Label Text="Pressure"  FontSize="Large" />
+                <Label Text="{Binding CurrentCondition.PressureIn, Converter={StaticResource inchesConverter}}" FontSize="Large" />
+            </StackLayout>
+            <StackLayout Grid.Row="6" Grid.Column="1" Orientation="Horizontal">
+                <Label Text="Visibility"  FontSize="Large" />
+                <Label Text="{Binding CurrentCondition.VisibilityMiles, Converter={StaticResource milesConverter}}" FontSize="Large" />
+            </StackLayout>
+            <StackLayout Grid.Row="7" Grid.Column="1" Orientation="Horizontal">
+                <Label Text="Time"  FontSize="Large" />
+                <Label Text="{Binding CurrentCondition.ObsTime, StringFormat='{0:M/d/yy h:mm tt}'}" FontSize="Large" />
+            </StackLayout>
+        </Grid>
+        <!--</StackLayout>-->
+    </RefreshView>
+</ContentPage>
