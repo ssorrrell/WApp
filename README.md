@@ -33,5 +33,6 @@ There are two solutions, WAppClient is a Xamarin Forms Android/Universal Windows
  Background download thread for UWP<br/>
  Share downloaded radar images and feeds with other WApps on the same network<br/>
 
- 
+WAppClient <br/>
+https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1/
  
