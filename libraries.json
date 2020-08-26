@@ -1,0 +1,35 @@
+{
+  "ASP.NET": {
+    "imports": ["Microsoft.AspNetCore.App"],
+    "technologies": ["Server side rendering"],
+    "description": "ASP.NET Core is an open-source and cross-platform framework for building modern cloud based internet connected applications, such as web apps, IoT apps and mobile backends.",
+    "language": "C#"
+  },
+  "NETStandard.Library": {
+    "imports": ["NETStandard.Library"],
+    "technologies": [".Net Standard Library"],
+    "description": "",
+    "language": "c#"
+  },
+  "Blazor": {
+    "imports": ["Microsoft.AspNetCore.Components.Web"],
+    "technologies": ["Frontend", "WebAssembly"],
+    "description": "Blazor is a framework for building interactive client-side web UI with .NET",
+    "image": "https://devblogs.microsoft.com/aspnet/wp-content/uploads/sites/16/2019/04/BrandBlazor_nohalo_1000x.png",
+    "language": "C#"
+  },
+  "Dapper": {
+    "imports": ["Dapper"],
+    "technologies": ["MicroORM"],
+    "description": "",
+    "language": "C#"
+  },
+  "NUnit": {
+    "imports": ["NUnit.Framework"],
+    "technologies": ["Testing"],
+    "description": "NUnit is a unit-testing framework for all .Net languages.",
+    "image": "https://nunit.org/img/nunit_logo_128.png",
+    "language": "C#"
+  },
+  
+}
