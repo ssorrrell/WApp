@@ -18,17 +18,28 @@ namespace WAppClient.ViewModels
     {
         public Command LoadItemsCommand { get; set; }
 
-        Forecast _forecast = new Forecast() { DateStamp = DateTime.Now };
+        /*Forecast _forecast = new Forecast() { DateStamp = DateTime.Now };
         public Forecast Forecast
         {
             get { return _forecast; }
             set { SetProperty(ref _forecast, value); }
+        }*/
+
+        public ObservableCollection<ForecastHalfDay> ForecastHalfDays { get; set; }
+
+        DateTime _dateStamp = DateTime.Now;
+        public DateTime DateStamp
+        {
+            get { return _dateStamp; }
+            set { SetProperty(ref _dateStamp, value); }
         }
 
         public ForecastViewModel()
         {
             Title = "Forecast";
-            Forecast = SeedData.GetForecastObject();
+            //Forecast = SeedData.GetForecastObject();
+            //ForecastHalfDays = SeedData.GetForecastHalfDays();
+            ForecastHalfDays = SeedData.GetForecastHalfDays();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
         }
 
@@ -38,7 +49,9 @@ namespace WAppClient.ViewModels
 
             try
             {
-                Forecast = SeedData.GetForecastObject();
+                //Forecast = SeedData.GetForecastObject();
+                DateStamp = DateTime.Now;
+                ForecastHalfDays = SeedData.GetForecastHalfDays();
                 /*Items.Clear();
                 var items = await DataStore.GetItemsAsync(true);
                 foreach (var item in items)

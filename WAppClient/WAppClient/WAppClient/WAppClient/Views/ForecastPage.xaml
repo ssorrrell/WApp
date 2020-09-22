@@ -12,22 +12,34 @@
 
     </ContentPage.ToolbarItems>
 
-    <StackLayout>
-        <Label Text="{Binding Forecast.DateStamp}"/>
+    <StackLayout BackgroundColor="Cornsilk">
+        <Label Text="{Binding DateStamp, StringFormat='{0:MMMM dd, yyyy} {0:hh\\:mm}'}" FontSize="Medium" HorizontalOptions="CenterAndExpand" />
         <RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}" Command="{Binding LoadItemsCommand}">
-            <CollectionView x:Name="ForecastCollectionView" ItemsSource="{Binding Forecast.ForecastHalfDays}">
+            <CollectionView x:Name="ForecastCollectionView" ItemsSource="{Binding ForecastHalfDays}">
                 <d:CollectionView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                     </x:Array>
                 </d:CollectionView.ItemsSource>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Padding="10">
-                            <Label Text="{Binding Name}" 
-                                    d:Text="{Binding .}"
-                                    LineBreakMode="NoWrap" 
-                                    Style="{DynamicResource ListItemTextStyle}" 
-                                    FontSize="16" />
+                        <StackLayout Padding="5">
+                            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                <Frame WidthRequest="350" HeightRequest="90" Padding="3">
+                                    <StackLayout VerticalOptions="Start">
+                                        <Label Text="{Binding Name}" 
+                                            d:Text="{Binding .}"
+                                            LineBreakMode="NoWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}" 
+                                            FontSize="Medium" />
+                                        <Label Text="{Binding WeatherCondition}" 
+                                            d:Text="{Binding .}"
+                                            LineBreakMode="NoWrap" 
+                                            Style="{DynamicResource ListItemTextStyle}" 
+                                            FontSize="Medium" />
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+
                             <!--<Label Text="{Binding WeatherText}" 
                                     d:Text="Item descripton"
                                     LineBreakMode="NoWrap"

@@ -22,19 +22,12 @@ namespace WAppClient.ViewModels
             get { return _currentCondition; }
             set { SetProperty(ref _currentCondition, value); }
         }
-        string _windString = "test";
-        public string WindString
-        {
-            get { return _windString; }
-            set { SetProperty(ref _windString, value); }
-        }
 
         public Command LoadItemsCommand { get; set; }
 
         public CurrentConditionsViewModel()
         {
             Title = "Current Conditions";
-            WindString = "Test";
             CurrentCondition = SeedData.GetCurrentCondition();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
         }
