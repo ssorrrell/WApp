@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vc="clr-namespace:WAppClient.Views.ValueConverters"
+             xmlns:vm="clr-namespace:WAppClient.ViewModels"
              mc:Ignorable="d"
              Title="{Binding Title}"
              x:Class="WAppClient.Views.ForecastPage"
@@ -11,6 +13,16 @@
     <ContentPage.ToolbarItems>
 
     </ContentPage.ToolbarItems>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <vc:StringIsZeroToBoolConverter x:Key="stringIsZeroToBoolConverter" />
+            <vc:InverterConverter x:Key="inverterConverter" />
+            <vc:ForecastTextConverter x:Key="forecastTextConverter" />
+            <vc:ForecastTextInverterConverter x:Key="forecastTextInverterConverter" />
+            <vc:PercentConverter x:Key="percentConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
     <StackLayout BackgroundColor="Cornsilk">
         <Label Text="{Binding DateStamp, StringFormat='{0:MMMM dd, yyyy} {0:hh\\:mm}'}" FontSize="Medium" HorizontalOptions="CenterAndExpand" />
@@ -24,30 +36,83 @@
                     <DataTemplate>
                         <StackLayout Padding="5">
                             <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                                <Frame WidthRequest="350" HeightRequest="90" Padding="3">
+                                <Frame WidthRequest="390" HeightRequest="60" Padding="3">
                                     <StackLayout VerticalOptions="Start">
-                                        <Label Text="{Binding Name}" 
-                                            d:Text="{Binding .}"
-                                            LineBreakMode="NoWrap" 
-                                            Style="{DynamicResource ListItemTextStyle}" 
-                                            FontSize="Medium" />
-                                        <Label Text="{Binding WeatherCondition}" 
-                                            d:Text="{Binding .}"
-                                            LineBreakMode="NoWrap" 
-                                            Style="{DynamicResource ListItemTextStyle}" 
-                                            FontSize="Medium" />
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                                            <Grid WidthRequest="390">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*" />
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                    <ColumnDefinition Width="Auto" />
+                                                </Grid.ColumnDefinitions>
+                                                <Label Text="{Binding Name}" 
+                                                        d:Text="{Binding .}"
+                                                        LineBreakMode="NoWrap" 
+                                                        Style="{DynamicResource ListItemTextStyle}" 
+                                                        Grid.Column="0" Grid.Row="0"
+                                                        FontSize="Medium" />
+                                                <StackLayout Orientation="Horizontal" HorizontalOptions="End" Grid.Column="1" Grid.Row="0">
+                                                    <Label Text="Precip" 
+                                                        LineBreakMode="NoWrap" 
+                                                        Style="{DynamicResource ListItemTextStyle}" 
+                                                        IsVisible="{Binding PropPrecip, Converter={StaticResource stringIsZeroToBoolConverter}}"
+                                                        FontSize="Medium" />
+                                                    <Label Text="{Binding PropPrecip, Converter={StaticResource percentConverter}}" 
+                                                        d:Text="{Binding ., Converter={StaticResource percentConverter}}"
+                                                        LineBreakMode="NoWrap" 
+                                                        Style="{DynamicResource ListItemTextStyle}" 
+                                                        IsVisible="{Binding PropPrecip, Converter={StaticResource stringIsZeroToBoolConverter}}"
+                                                        FontSize="Medium" />
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" HorizontalOptions="End" Grid.Column="2" Grid.Row="0">
+                                                    <Label Text="Low" 
+                                                        LineBreakMode="NoWrap" 
+                                                        Style="{DynamicResource ListItemTextStyle}" 
+                                                        FontSize="Medium" />
+                                                    <Label Text="{Binding MinTempF}" 
+                                                        d:Text="{Binding .}"
+                                                        LineBreakMode="NoWrap" 
+                                                        Style="{DynamicResource ListItemTextStyle}" 
+                                                        FontSize="Medium" />
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" HorizontalOptions="End" Grid.Column="3" Grid.Row="0">
+                                                    <Label Text="High" 
+                                                            LineBreakMode="NoWrap" 
+                                                            Style="{DynamicResource ListItemTextStyle}" 
+                                                            FontSize="Medium" />
+                                                    <Label Text="{Binding MaxTempF}" 
+                                                            d:Text="{Binding .}"
+                                                            LineBreakMode="NoWrap" 
+                                                            Style="{DynamicResource ListItemTextStyle}" 
+                                                            FontSize="Medium" />
+                                                </StackLayout>
+                                            </Grid>
+                                        </StackLayout>
+                                        <StackLayout>
+                                            <Label Text="{Binding WeatherCondition}" 
+                                                    d:Text="{Binding .}"
+                                                    LineBreakMode="WordWrap" 
+                                                    Style="{DynamicResource ListItemTextStyle}" 
+                                                    FontSize="Medium"
+                                                    IsVisible="{Binding DisplayWeather}"/>
+                                            <Label Text="{Binding WeatherText}" 
+                                                    d:Text="{Binding .}"
+                                                    LineBreakMode="WordWrap" 
+                                                    Style="{DynamicResource ListItemTextStyle}" 
+                                                    FontSize="Medium"
+                                                    IsVisible="{Binding DisplayWeather, Converter={StaticResource inverterConverter}}">
+                                            </Label>
+                                        </StackLayout>
                                     </StackLayout>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnItemSelected"></TapGestureRecognizer>
+                                    </Frame.GestureRecognizers>
                                 </Frame>
                             </StackLayout>
-
-                            <!--<Label Text="{Binding WeatherText}" 
-                                    d:Text="Item descripton"
-                                    LineBreakMode="NoWrap"
-                                    Style="{DynamicResource ListItemDetailTextStyle}"
-                                    FontSize="13" />-->
-                            <!--<StackLayout.GestureRecognizers>
-                                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnItemSelected"></TapGestureRecognizer>
-                            </StackLayout.GestureRecognizers>-->
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

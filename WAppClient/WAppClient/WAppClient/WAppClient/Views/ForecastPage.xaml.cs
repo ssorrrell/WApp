@@ -31,5 +31,23 @@ namespace WAppClient.Views
             /*if (viewModel.Items.Count == 0)
                 viewModel.IsBusy = true;*/
         }
+
+        async void OnItemSelected(object sender, EventArgs args)
+        {   //tap item in list
+            var s = sender as Frame;
+            ForecastHalfDay item = s.BindingContext as ForecastHalfDay;
+            item.DisplayWeather = !item.DisplayWeather;
+
+            if (item.DisplayWeather)
+            {
+                s.HeightRequest = s.HeightRequest / 2;
+            }
+            else
+            {
+                s.HeightRequest = s.HeightRequest * 2;
+            }
+
+            s.ForceLayout();
+        }
     }
 }
